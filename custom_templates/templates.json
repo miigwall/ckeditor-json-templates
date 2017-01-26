@@ -1,0 +1,22 @@
+{
+	"templates" : [
+		{
+			"title": "SiteGiG CMS: One column row",
+			"image": "",
+			"description": "One full with row with background support",
+			"html": "<div class=\"sg_content_rows sg_content_row_columns_1\"><div class=\"sg_content_row\">Put your content here</div></div>"
+		},
+		{
+			"title": "SiteGiG CMS: Two columns row",
+			"image": "",
+			"description": "One full with row with background support and two columns",
+			"html": "<div class=\"sg_content_rows sg_content_row_columns_2\"><div class=\"sg_content_row\">Put your content here</div><div class=\"sg_content_row\">Put your content here</div></div>"
+		},
+		{
+			"title": "SiteGiG CMS: Three columns row",
+			"image": "",
+			"description": "One full with row with background support and three columns",
+			"html": "<div class=\"sg_content_rows sg_content_row_columns_3\"><div class=\"sg_content_row\">Put your content here</div><div class=\"sg_content_row\">Put your content here</div><div class=\"sg_content_row\">Put your content here</div></div>"
+		}
+	]
+}

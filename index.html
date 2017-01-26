@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+	<title>CKEditor</title>
+	<meta charset="utf-8" />
+	<script src="ckeditor/ckeditor.js"></script>
+	<script src="ckeditor/config.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<textarea name="editor1"></textarea>
+<script>
+$.getJSON( "custom_templates/templates.json", function( data ) {
+
+	CKEDITOR.replace( 'editor1', CKEDITOR.editorConfig );
+
+
+	// Register a templates definition set named "default".
+	CKEDITOR.addTemplates( 'default', {
+		// The name of sub folder which hold the shortcut preview images of the
+		// templates.
+		imagesPath: CKEDITOR.getUrl( CKEDITOR.plugins.getPath( 'templates' ) + 'templates/images/' ),
+
+		// The templates definitions.
+		templates: data.templates
+
+	});
+
+	CKEDITOR.config.templates_replaceContent = false;
+
+	console.log( data.templates );
+
+});
+</script>
+
+</body>
+</html>
