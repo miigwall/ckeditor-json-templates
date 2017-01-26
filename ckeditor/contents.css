@@ -211,7 +211,7 @@ a > img {
 /* Custom */
 
 .sg_content_rows {
-	padding: 20px;
+	padding: 10px;
 	margin-bottom: 20px;
 	border: 1px solid #ddd;
 	display: table;
@@ -220,17 +220,18 @@ a > img {
 }
 
 .sg_content_rows .sg_content_row {
+	padding: 10px;
 	display: table-cell;
 }
 
-.sg_content_row_columns_1 .sg_content_rows .sg_content_row {
+.sg_content_row_columns_1.sg_content_rows .sg_content_row {
 	width: 100%;
 }
 
-.sg_content_row_columns_2 .sg_content_rows .sg_content_row {
+.sg_content_row_columns_2.sg_content_rows .sg_content_row {
 	width: 50%;
 }
 
-.sg_content_row_columns_3 .sg_content_rows .sg_content_row {
+.sg_content_row_columns_3.sg_content_rows .sg_content_row {
 	width: 33.333%;
 }
